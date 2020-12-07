@@ -9,7 +9,7 @@ public class Developer extends Employee {
 
         // with reference
         employee.publicfirstName = "Igor";
-        employee.publicdoWork()
+        employee.publicdoWork();
     }
 
     public void checkProtected() {

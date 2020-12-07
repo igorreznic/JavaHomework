@@ -12,22 +12,22 @@ public class Employee {
 
     //
     public Employee publicdoWork() {
-        return Employee();
+        return new Employee();
     }
 
     //
     protected Employee protecteddoWork() {
-        return Employee();
+        return new Employee();
     }
 
     //
     Employee defaultdoWork() {
-        return Employee();
+        return new Employee();
     }
 
     //
     private Employee privatedoWork() {
-        return Employee();
+        return new Employee();
     }
 
     public void checkPublic() {
