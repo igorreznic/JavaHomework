@@ -26,6 +26,14 @@ public class RecipeDemo {
           System.out.println(recipe1);
         }
         */
+        /*
+        public void staticMethod2() {
+            System.out.println(recipe1);
+        }
+         staticMethod2();
+
+         */
+
         System.out.println("Calling staticMethod()...");
         staticMethod();
 
