@@ -2,7 +2,7 @@ package com.tekwill.learning.basics.io.reading;
 
 import java.util.Scanner;
 
-public class Latitude {
+public class LatitudePrinter {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in); // Scanner initialization
 
