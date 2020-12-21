@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class FuelConsumptionConverter {
     public static final float KM_TO_MILES_CONVERTER = 0.621371F;
-    public static final float GALON_TO_LITERS_CONVERTER = 3.7854F;
+    public static final float GALLON_TO_LITERS_CONVERTER = 3.7854F;
 
     public static float EU_to_US_ConsumptionConverter(float consumptionInEU_Format) {
-        return 1 / ((consumptionInEU_Format / GALON_TO_LITERS_CONVERTER) / (KM_TO_MILES_CONVERTER * 100));
+        return 1 / ((consumptionInEU_Format / GALLON_TO_LITERS_CONVERTER) / (KM_TO_MILES_CONVERTER * 100));
     }
 
     public static void main(String[] args) {
