@@ -20,6 +20,16 @@ public class TimeHolder {
         remainingSeconds = (int) ((seconds % (HOURS_IN_A_DAY * MINUTES_IN_AN_HOUR * SECONDS_IN_A_MINUTE)) % (MINUTES_IN_AN_HOUR * SECONDS_IN_A_MINUTE)) % SECONDS_IN_A_MINUTE;
     }
 
+    @Override
+    public String toString() {
+        return totalSeconds + " seconds = " +
+                days + " Days, " +
+                hours + " Hours, " +
+                minutes + " Minutes, " +
+                remainingSeconds + " Seconds";
+    }
+
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -30,12 +40,5 @@ public class TimeHolder {
 
     }
 
-    @Override
-    public String toString() {
-        return totalSeconds + " seconds = " +
-                days + " Days, " +
-                hours + " Hours, " +
-                minutes + " Minutes, " +
-                remainingSeconds + " Seconds";
-    }
+
 }
