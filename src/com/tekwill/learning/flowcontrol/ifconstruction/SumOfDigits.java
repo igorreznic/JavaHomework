@@ -11,7 +11,7 @@ public class SumOfDigits {
 
 //              the hint was just 5*****
 
-    public static int SumOfDigitsCounter(int number) {
+    public static int getSumOfDigits(int number) {
         int hundreds = number / 100;
         int tens = (number % 100) / 10;
         int units = (number % 100) % 10;
@@ -27,6 +27,6 @@ public class SumOfDigits {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a number between 0 and 1000");
         int number = scanner.nextInt();
-        System.out.println("The sum of digits is: " + SumOfDigitsCounter(number));
+        System.out.println("The sum of digits is: " + getSumOfDigits(number));
     }
 }
