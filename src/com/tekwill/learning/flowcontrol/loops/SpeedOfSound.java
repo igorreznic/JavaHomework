@@ -3,6 +3,10 @@ package com.tekwill.learning.flowcontrol.loops;
 import java.util.Scanner;
 
 public class SpeedOfSound {
+    public static final double SPEED_OF_SOUND_IN_AIR_FEET_SEC = 1100;
+    public static final double SPEED_OF_SOUND_IN_WATER_FEET_SEC = 4900;
+    public static final double SPEED_OF_SOUND_IN_STEEL_FEET_SEC = 16400;
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter \"air\", \"water\" or \"steel\" and the distance in feet");
@@ -11,13 +15,13 @@ public class SpeedOfSound {
 
         switch (env) {
             case "air":
-                System.out.printf("It takes %.2f seconds for sound to travel %.2f feet through the air", distance / 1100, distance);
+                System.out.printf("It takes %.2f seconds for sound to travel %.2f feet through the air", distance / SPEED_OF_SOUND_IN_AIR_FEET_SEC, distance);
                 break;
             case "water":
-                System.out.printf("It takes %.2f seconds for sound to travel %.2f feet through the water", distance / 4900, distance);
+                System.out.printf("It takes %.2f seconds for sound to travel %.2f feet through the water", distance / SPEED_OF_SOUND_IN_WATER_FEET_SEC, distance);
                 break;
             case "steel":
-                System.out.printf("It takes %.2f seconds for sound to travel %.2f feet through the steel", distance / 16400, distance);
+                System.out.printf("It takes %.2f seconds for sound to travel %.2f feet through the steel", distance / SPEED_OF_SOUND_IN_STEEL_FEET_SEC, distance);
                 break;
             default:
                 System.out.println("Error!!! Wrong input");
