@@ -11,7 +11,7 @@ public class DisplayPatterns {
             for (int j = i; j > 0; j--) {
                 System.out.print(j + " ");
             }
-            System.out.println("");
+            System.out.println();
         }
         System.out.println();
     }
