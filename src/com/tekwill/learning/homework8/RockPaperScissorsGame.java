@@ -19,7 +19,7 @@ public class RockPaperScissorsGame {
     public static void playAgain() {
         System.out.println("\nPress [Y] if you want to play again, or any key to EXIT the game.");
         Scanner scanner = new Scanner(System.in);
-        String response = scanner.next().toUpperCase();
+        String response = scanner.next();
         if (response.equalsIgnoreCase("Y")) {
             play();
         } else {
