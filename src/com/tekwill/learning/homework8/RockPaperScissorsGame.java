@@ -32,33 +32,35 @@ public class RockPaperScissorsGame {
         int userAnswer = getUserAnswer();
 
         checkAnswers(computerAnswer, userAnswer);
+
+        playAgain();
     }
 
     public static void checkAnswers(int computerChoice, int userChoice) {
         if (computerChoice == userChoice) {
             System.out.println("Tie!!! You both chose the same element\n[" + computerChoice + "] : [" + userChoice + "]");
-            playAgain();
+
         } else if (computerChoice == 1 && userChoice == 3) {
             System.out.println("You Lost!!!     You [Scissors]   :   [Rock]  Computer");
-            playAgain();
+
         } else if (computerChoice == 2 && userChoice == 1) {
             System.out.println("You Lost!!!     You [Rock]   :   [Paper]  Computer ");
-            playAgain();
+
         } else if (computerChoice == 3 && userChoice == 2) {
             System.out.println("You Lost!!!     You  [Paper]   :   [Scissors]  Computer");
-            playAgain();
+
         } else if (computerChoice == 1 && userChoice == 2) {
             System.out.println("You Won!!!     You [Paper]   :  [Rock]  Computer");
-            playAgain();
+
         } else if (computerChoice == 2 && userChoice == 3) {
             System.out.println("You Won!!!     You [Scissors]   :  [Paper]  Computer");
-            playAgain();
+
         } else if (computerChoice == 3 && userChoice == 1) {
             System.out.println("You Won!!!     You  [Rock]   :  [Scissors]  Computer");
-            playAgain();
+
         } else {
             System.out.println("Wrong input");
-            playAgain();
+
         }
     }
 
