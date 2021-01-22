@@ -1,13 +1,11 @@
 package com.tekwill.learning.homework10;
 
-import java.util.Scanner;
-
 public class CheckISBN13 {
     private static int sum;
 
     public static int checkISBN(String isbn) {
         int lastDigit;
-        for (int i = 0; i < isbn.length(); i++) {
+        for (int i = 0; i < 12; i++) {
             if (i % 2 == 0) {
                 sum += isbn.charAt(i);
             } else sum += 3 * isbn.charAt(i);
@@ -29,13 +27,14 @@ public class CheckISBN13 {
 
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter the first 12 digits of a ISBN-13 as a string:");
-        String isbnInput = scanner.next();
-
-        if (isbnInput.length() > 12)
-            System.out.println("The input is longer than 12 digits. The result is based on first 12 digits.");
-
-        System.out.println("The ISBN-13 number is: " + isbnInput.substring(0, 12).concat(Integer.toString(checkISBN(isbnInput))));
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Enter the first 12 digits of a ISBN-13 as a string:");
+//        String isbnInput = scanner.next();
+//
+//        if (isbnInput.length() > 12)
+//            System.out.println("The input is longer than 12 digits. The result is based on first 12 digits.");
+//
+//        System.out.println("The ISBN-13 number is: " + isbnInput.substring(0, 12).concat(Integer.toString(checkISBN(isbnInput))));
+        System.out.println(0 % 2);
     }
 }
